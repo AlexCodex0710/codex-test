@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>損益平衡計算工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>損益平衡計算工具</h1>
+        <section id="basic-section">
+            <h2>基本資料</h2>
+            <label>月營業額：<input type="number" id="monthlyRevenue" placeholder="可選"></label>
+            <label>固定成本：<input type="number" id="fixedCost"></label>
+            <label>變動成本(每單位)：<input type="number" id="variableCost"></label>
+            <label>毛利率(%)：<input type="number" id="grossMargin"></label>
+            <label>單價：<input type="number" id="price"></label>
+            <button id="calcBasic">計算損益平衡</button>
+            <div class="result" id="basicResult"></div>
+        </section>
+        <section id="finance-section">
+            <h2>新增融資影響</h2>
+            <label>舊有貸款月攤還：<input type="number" id="oldLoanPayment"></label>
+            <label>新增融資金額：<input type="number" id="newLoanAmount"></label>
+            <label>年限(年)：<input type="number" id="newLoanYears"></label>
+            <label>利率(%)：<input type="number" id="newLoanRate"></label>
+            <button id="calcFinance">計算新增融資後損益平衡</button>
+            <div class="result" id="financeResult"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
